@@ -1,0 +1,29 @@
+[project]
+name = "pdm-demo"
+version = "0.0.1"
+description = "Default template for PDM package"
+authors = [
+    {name = "Jonathon Tech", email = "jon.tech@icf.com"},
+]
+dependencies = [
+    "fastapi>=0.105.0",
+    "uvicorn>=0.24.0.post1",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "License-LICENSE"}
+
+
+[tool.pdm]
+package-type = "application"
+
+
+[tool.pdm.scripts]
+start = "uvicorn app:api --reload"
+build = "pyinstaller main.py --clean --onefile --name das"
+
+[tool.pdm.dev-dependencies]
+pyinstaller = []
+dev = [
+    "pyinstaller>=6.3.0",
+]
