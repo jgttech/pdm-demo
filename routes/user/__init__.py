@@ -6,6 +6,5 @@ class User(BaseModel):
     last_name: str
 
 @api.post("/user")
-async def post_user():
-    print("Hello world!!!")
-    return {}
+async def post_user(user: User):
+    return user
