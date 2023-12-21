@@ -27,4 +27,6 @@ clean = "rm -rfv build dist das.spec"
 pyinstaller = []
 dev = [
     "pyinstaller>=6.3.0",
+    "scons>=4.6.0",
+    "staticx>=0.14.1",
 ]

@@ -2,10 +2,10 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default", "pyinstaller", "dev"]
+groups = ["default", "dev", "pyinstaller"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:1b3f2aa787bf972a25a565a2e735bf9c7e4bfd89e8eef3899c04682d18fa2b4f"
+content_hash = "sha256:904c8b0322c52f6941db128d03d331c9225efc47f569a2a556c3d92e8c5e9845"
 
 [[package]]
 name = "altgraph"
@@ -218,6 +218,16 @@ files = [
 ]
 
 [[package]]
+name = "pyelftools"
+version = "0.30"
+summary = "Library for analyzing ELF files and DWARF debugging information"
+groups = ["dev"]
+files = [
+    {file = "pyelftools-0.30-py2.py3-none-any.whl", hash = "sha256:544c3440eddb9a0dce70b6611de0b28163d71def759d2ed57a0d00118fc5da86"},
+    {file = "pyelftools-0.30.tar.gz", hash = "sha256:2fc92b0d534f8b081f58c7c370967379123d8e00984deb53c209364efd575b40"},
+]
+
+[[package]]
 name = "pyinstaller"
 version = "6.3.0"
 requires_python = "<3.13,>=3.8"
@@ -271,6 +281,20 @@ files = [
 ]
 
 [[package]]
+name = "scons"
+version = "4.6.0"
+requires_python = ">=3.6"
+summary = "Open Source next-generation build tool."
+groups = ["dev"]
+dependencies = [
+    "setuptools",
+]
+files = [
+    {file = "SCons-4.6.0-py3-none-any.whl", hash = "sha256:07cc8ed992561c9a3af3d5b65a4635cb05b2a8c0695be90c4879ac6018d84ccc"},
+    {file = "SCons-4.6.0.tar.gz", hash = "sha256:7db28958b188b800f803c287d0680cc3ac7c422ed0b1cf9895042c52567803ec"},
+]
+
+[[package]]
 name = "setuptools"
 version = "69.0.2"
 requires_python = ">=3.8"
@@ -307,6 +331,20 @@ files = [
 ]
 
 [[package]]
+name = "staticx"
+version = "0.14.1"
+requires_python = ">=3.7"
+summary = "Build static self-extracting app from dynamic executable"
+groups = ["dev"]
+dependencies = [
+    "pyelftools",
+]
+files = [
+    {file = "staticx-0.14.1-py3-none-manylinux1_x86_64.whl", hash = "sha256:bd34ee12e2d97d9c88970855817a70750745ce6bddc616c42fb318bb5a422e89"},
+    {file = "staticx-0.14.1.tar.gz", hash = "sha256:dbf18c1016b0be4000f480095ed3ef335b512a7d992b469cb094fbc40921a218"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.9.0"
 requires_python = ">=3.8"
@@ -319,7 +357,7 @@ files = [
 
 [[package]]
 name = "uvicorn"
-version = "0.24.0.post1"
+version = "0.25.0"
 requires_python = ">=3.8"
 summary = "The lightning-fast ASGI server."
 groups = ["default"]
@@ -328,6 +366,6 @@ dependencies = [
     "h11>=0.8",
 ]
 files = [
-    {file = "uvicorn-0.24.0.post1-py3-none-any.whl", hash = "sha256:7c84fea70c619d4a710153482c0d230929af7bcf76c7bfa6de151f0a3a80121e"},
-    {file = "uvicorn-0.24.0.post1.tar.gz", hash = "sha256:09c8e5a79dc466bdf28dead50093957db184de356fcdc48697bad3bde4c2588e"},
+    {file = "uvicorn-0.25.0-py3-none-any.whl", hash = "sha256:ce107f5d9bd02b4636001a77a4e74aab5e1e2b146868ebbad565237145af444c"},
+    {file = "uvicorn-0.25.0.tar.gz", hash = "sha256:6dddbad1d7ee0f5140aba5ec138ddc9612c5109399903828b4874c9937f009c2"},
 ]
