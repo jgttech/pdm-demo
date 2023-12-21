@@ -21,6 +21,7 @@ package-type = "application"
 [tool.pdm.scripts]
 start = "uvicorn app:api --reload"
 build = "pyinstaller main.py --clean --onefile --name das"
+clean = "rm -rfv build dist das.spec"
 
 [tool.pdm.dev-dependencies]
 pyinstaller = []
