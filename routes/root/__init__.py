@@ -1,4 +1,4 @@
-from app import api
+from server import api
 
 @api.get("/")
 async def get_root():

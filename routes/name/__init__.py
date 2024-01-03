@@ -1,4 +1,4 @@
-from app import api
+from server import api
 from typing import Union
 
 @api.get("/name/{first_name}")

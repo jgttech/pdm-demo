@@ -1,4 +1,4 @@
-from app import api
+from server import api
 from pydantic import BaseModel
 
 class User(BaseModel):
